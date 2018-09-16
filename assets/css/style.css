@@ -2,6 +2,11 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
+h1 {
+    font-family: 'Noto Serif KR', sans-serif;
+    font-weight: 700;
+}
+
 #gifs {
     margin-top: 30px;
 }
