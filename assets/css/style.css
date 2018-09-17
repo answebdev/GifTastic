@@ -15,13 +15,9 @@ body {
     background-color: #007bff!important;
 }
 
-.navbar .navbar-light {
-    text-align: center!important;
-}
-
 h1 {
     font-family: 'Noto Serif KR', sans-serif;
-    color: #ffffff!important;
+    color: #ffffff;
     font-weight: 700;
 }
 
