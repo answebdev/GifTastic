@@ -2,10 +2,19 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
+.bg-light {
+    background-color: #007bff!important;
+
 h1 {
     font-family: 'Noto Serif KR', sans-serif;
+    color: #ffffff!important;
     font-weight: 700;
 }
+
+.jumbotron-fluid {
+    padding-top: 0;
+}
+
 
 #gifs {
     margin-top: 30px;

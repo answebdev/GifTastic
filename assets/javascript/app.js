@@ -19,6 +19,15 @@ function runQuery(animal, queryURL) {
                 console.log("Rating: " + response.data[i].rating + " || " + "URL: " + response.data[i].url)
             }
 
+            // Create and store a button
+            var newButton = $("<button>");
+            // Give each "newButton" the following classes: "btn btn-primary"
+            newButton.addClass("btn btn-primary").css("margin", "5px 5px 5px 5px");
+            // Add the text of the searched item on the new button
+            newButton.text(searchTerm);
+            // Append the new button to #buttonSection
+            $("#buttonSection").append(newButton);
+
 
             console.log("query URL: " + queryURL);
             console.log(response);
