@@ -1,20 +1,29 @@
 body {
     font-family: 'Noto Sans', sans-serif;
+    background: url("../images/old_wall.png");
+}
+#area {
+    /* background-color: #e9ebee; */
+    background-color: #ffffff;
+    width: 100%;
+    /* margin: 0 auto;
+    clear: both; */
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
 }
 
 .bg-light {
     background-color: #007bff!important;
+}
+
+.navbar .navbar-light {
+    text-align: center!important;
+}
 
 h1 {
     font-family: 'Noto Serif KR', sans-serif;
     color: #ffffff!important;
     font-weight: 700;
 }
-
-.jumbotron-fluid {
-    padding-top: 0;
-}
-
 
 #gifs {
     margin-top: 30px;
