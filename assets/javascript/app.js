@@ -15,10 +15,9 @@ function runQuery(animal, queryURL) {
     $.ajax({ url: queryURL, method: "GET" })
         .then(function (response) {
 
-
             for (var i = 0; i < response.data.length; i++) {
                 console.log("Rating: " + response.data[i].rating + " || " + "URL: " + response.data[i].url);
-                $("#gifs").append("<p>Rating: " + response.data[i].rating + "</p>");
+                $("#gifs").append("<p>Rating: " + response.data[i].rating.toUpperCase() + "</p>");
                 $("#gifs").append("<img src='" + response.data[i].images.downsized.url + "'>");
 
             }
@@ -32,11 +31,11 @@ function runQuery(animal, queryURL) {
             // Append the new button to #buttonSection
             $("#buttonSection").append(newButton);
 
+
             console.log("query URL: " + queryURL);
             console.log(response);
         });
 }
-
 
 // Capture the value from the search field
 $("#searchBtn").on("click", function () {
@@ -76,22 +75,7 @@ $("#searchBtn").on("click", function () {
 //             $("#gifs").prepend(animal);
 
 //         }
-        
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
 
 
 
