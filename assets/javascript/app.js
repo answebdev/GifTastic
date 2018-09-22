@@ -43,6 +43,7 @@ $("#searchBtn").on("click", function () {
     console.log("Animal Array: " + animals);
     // Calling renderButtons which handles the processing of our movie array
     renderButtons();
+    // return false;
 });
 
 $(document).on("click", ".gifButton", displayGifInfo);
@@ -71,8 +72,8 @@ function renderButtons() {
         newButton.text(animals[i]);
         // Adding the button to the #buttonSection
         $("#buttonSection").append(newButton);
-        }
     }
+}
 
 // displayGifInfo();
 
@@ -88,12 +89,47 @@ function displayGifInfo() {
             // Storing an array of results in the results variable
             var results = response.data;
             console.log(results);
+            console.log(queryURL);
+
+            // if (searchTerm === "still") {
+            //     $(this).attr("src", $(this).attr("data-animate"));
+            //     $(this).attr("data-state", "animate");
+            //   } else {
+            //     $(this).attr("src", $(this).attr("data-still"));
+            //     $(this).attr("data-state", "still");
+            //   }
+
 
             // Looping over every result item
             for (var i = 0; i < results.length; i++) {
 
-                $("#gifs").prepend("<p>Rating: " + results[i].rating.toUpperCase() + "</p>");
-                $("#gifs").prepend("<img src='" + results[i].images.downsized.url + "'>");
+                // $("#gifs").prepend("<p>Rating: " + results[i].rating.toUpperCase() + "</p>");
+                // // $("#gifs").prepend("<img src='" + results[i].images.downsized.url + "'>");
+                // $("#gifs").prepend("<img src='" + results[i].images.downsized_still.url + "'>");
+
+                var still = results[i].images.downsized_still.url;
+                // console.log(still);
+                var animated = results[i].images.downsized.url;
+                // console.log(animated);
+
+                var searchDiv = $('<div class = "search-item">');
+                var p = $('<p>').text("Rating: " + results[i].rating.toUpperCase());
+                // console.log(results[i].rating.toUpperCase());
+                var animated = results[i].images.downsized.url;
+                // console.log("Animated: " + animated);
+                var still = results[i].images.downsized_still.url;
+                // console.log("Still " + still);
+                var image = $("<img>");
+                image.attr("src", still);
+                image.attr("data-still", still);
+                image.attr("data-animated", animated);
+                image.attr("data-state", "still");
+                image.addClass("searchedGif");
+                searchDiv.append(p);
+                searchDiv.append(image);
+                $("#gifs").prepend(searchDiv);
+
+
 
                 // Creating a div to hold the gif
                 // var gifDiv = $("<div>");
@@ -122,7 +158,16 @@ function displayGifInfo() {
         });
 
 }
-
+$(document).on("click", ".searchedGif", function () {
+    var state = $(this).attr("data-state");
+    if (state == "still") {
+        $(this).attr("src", $(this).data("animated"));
+        $(this).attr("data-state", "animated");
+    } else {
+        $(this).attr("src", $(this).data("still"));
+        $(this).attr("data-state", "still");
+    }
+});
 
 
 
