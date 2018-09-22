@@ -3,14 +3,14 @@ body {
     background: url("../images/old_wall.png");
 }
 #area {
-    /* background-color: #e9ebee; */
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     width: 100%;
+    /* margin-left: -35px; */
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     /* margin: 0 auto;
     clear: both; */
-    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+    /* box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3); */
 }
 
 .bg-light {
@@ -21,10 +21,80 @@ h1 {
     font-family: 'Noto Serif KR', sans-serif;
     color: #ffffff;
     font-weight: 700;
-    /* margin-left: 60px; */
+    margin-left: 60px;
+}
+
+#searchBtn {
+    background-color: #007bff;
 }
 
 #gifs {
     margin-top: 30px;
     /* float: left; */
 }
+
+.form-group {
+    margin-bottom: 1rem;
+    margin-top: 40px;
+}
+
+/* #footer {
+    background-color: #007bff;
+} */
+
+/* .fixed-bottom {
+    background-color: #007bff!important;
+}
+
+#main-footer p {
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  } */
+
+/* ===== MEDIA QUERIES ===== */
+/* @media screen and (min-width: 991px) and (max-width: 1200px) {
+    #score-board {
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 981px) and (max-width: 990px) {
+    #score-board {
+        width: 50%;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+    #score-board {
+        width: 50%;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+    }
+}
+  
+@media screen and (min-width: 641px) and (max-width: 768px) { 
+    #score-board {
+        width: 75%;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+    }    
+}
+  
+@media screen and (max-width: 640px) {
+    #score-board {
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+    }
+} */
