@@ -1,16 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Noto Sans', sans-serif;
     background: url("../images/old_wall.png");
 }
 #area {
-    /* background-color: #ffffff; */
     width: 100%;
-    /* margin-left: -35px; */
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    /* margin: 0 auto;
-    clear: both; */
-    /* box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3); */
 }
 
 .bg-light {
@@ -30,56 +29,9 @@ h1 {
 
 #gifs {
     margin-top: 30px;
-    /* float: left; */
 }
 
 .form-group {
     margin-bottom: 1rem;
     margin-top: 40px;
 }
-
-/* ===== MEDIA QUERIES ===== */
-/* @media screen and (min-width: 991px) and (max-width: 1200px) {
-    #score-board {
-        width: 100%;
-        margin: 0 auto;
-        float: none;
-        margin-bottom: 10px;
-    }
-}
-
-@media screen and (min-width: 981px) and (max-width: 990px) {
-    #score-board {
-        width: 50%;
-        margin: 0 auto;
-        float: none;
-        margin-bottom: 10px;
-    }
-}
-
-@media screen and (min-width: 769px) and (max-width: 980px) {
-    #score-board {
-        width: 50%;
-        margin: 0 auto;
-        float: none;
-        margin-bottom: 10px;
-    }
-}
-  
-@media screen and (min-width: 641px) and (max-width: 768px) { 
-    #score-board {
-        width: 75%;
-        margin: 0 auto;
-        float: none;
-        margin-bottom: 10px;
-    }    
-}
-  
-@media screen and (max-width: 640px) {
-    #score-board {
-        width: 100%;
-        margin: 0 auto;
-        float: none;
-        margin-bottom: 10px;
-    }
-} */
