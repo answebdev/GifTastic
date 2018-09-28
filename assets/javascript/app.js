@@ -4,7 +4,7 @@ var searchTerm = "";
 
 // SEARCH FOR AN ITEM AND CAPTURE THE VALUE
 // Capture the value from the search field
-$("#searchBtn").on("click", function () {
+$("#searchBtn").on("click", function (event) {
     event.preventDefault();
     // alert("Test: Submit button has been clicked.");
     var searchTerm = $("#search").val().trim();
