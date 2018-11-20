@@ -26,3 +26,5 @@ https://answebdev.github.io/GifTastic/
 ![Screenshot 01](screenshots/giftastic-screenshot-01 "GifTastic")
 
 ![Screenshot 02](screenshots/giftastic-screenshot-02 "Search by Topic")
+
+![Screenshot 03](screenshots/giftastic_demo.gif "Demo")
