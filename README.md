@@ -6,8 +6,6 @@ GifTastic is a dynamic web page that populates with gifs using the GIPHY API. Th
 
 This web page uses jQuery, AJAX calls, and Javascript, as well as HTML and CSS, including Bootstrap. The API used comes from https://giphy.com/. The fonts used ('Noto Sans', sans-serif and 'Noto Serif KR', sans-serif) come from Google Fonts. The favicon used on the tab is from Font Awesome.
 
-Visit GifTastic: https://answebdev.github.io/GifTastic/
-
 # Technologies Used
 
 * AJAX/APIs
